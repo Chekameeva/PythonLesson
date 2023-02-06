@@ -3,6 +3,10 @@
 # натуральное число N – количество элементов в массиве. В последующих
 # строках записаны N целых чисел Ai. Последняя строка содержит число X
 
-a = [int(i) for i in input().split()]
-x = int(input())
-print(a.count(x))
+mas_a = []
+num = int(input("Введите количество элементов в массиве: "))
+for i in range(num):
+    mas_a.append(int(input()))
+x = int(input("Введите искомое число: "))
+print(mas_a.count(x))
+
